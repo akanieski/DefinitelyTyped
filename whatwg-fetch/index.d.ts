@@ -35,6 +35,7 @@ interface Body {
     blob(): Promise<Blob>;
     formData(): Promise<FormData>;
     json(): Promise<any>;
+    json<T>(): Promise<T>;
     text(): Promise<string>;
 }
 
